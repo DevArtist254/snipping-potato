@@ -1,5 +1,1 @@
-Info about the song
-
-Changes dynamic with the change in state
-Album at rotates on press play and stops on click 
 

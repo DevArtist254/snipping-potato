@@ -5,16 +5,24 @@ import song from "./assests/Alan-wa/Faded.mp3"
 
 function App() {
  return (
-  <div className="App">
-   <h1>Alan walker</h1>
-   <h2>Faded</h2>
-   <img src={musicCover} alt="cover" />
-   <audio src={song} controls />
+  <div>
    <div>
     <div>
-     <div>0.00</div>
-     <div>2.63</div>
+     <h1>0:00</h1>
+     <div className="song-cover">
+      <img className="image-cover" src={musicCover} alt="cover" />
+      <div className="dot"></div>
+      <div className="cic-dot"></div>
+     </div>
     </div>
+    <div>
+     <h1>ALAN WALKER</h1>
+     <h2>FADED</h2>
+     <h3>ESSENTIALS</h3>
+    </div>
+   </div>
+   <audio src={song} />
+   <div>
     <div></div>
    </div>
    <div>
