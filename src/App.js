@@ -3,6 +3,7 @@ import song from "./assests/Alan-wa/Faded.mp3"
 import Controls from "./comp/controls"
 import AudioContent from "./comp/audioContent"
 import AudioInfo from "./comp/audioInfo"
+import Progress from "./comp/progress"
 
 function App() {
  return (
@@ -12,9 +13,7 @@ function App() {
     <AudioInfo />
    </div>
    <audio src={song} />
-   <div>
-    <div></div>
-   </div>
+   <Progress />
    <Controls />
   </div>
  )

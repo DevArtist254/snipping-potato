@@ -1,5 +1,6 @@
 import React from "react"
 import {Icon} from "@iconify/react"
+import PlayBtn from "./controls/play.btn"
 
 function Controls() {
  return (
@@ -10,8 +11,7 @@ function Controls() {
     height="80"
     hFlip={true}
    />
-   {/* <Icon icon="gg:play-pause-o" width="100" height="100" /> */}
-   <Icon icon="gg:play-button-o" width="100" height="100" />
+   <PlayBtn />
    <Icon
     icon="material-symbols:next-plan-outline-rounded"
     width="80"
