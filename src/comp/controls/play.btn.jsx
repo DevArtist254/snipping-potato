@@ -1,11 +1,20 @@
 import {useState} from "react"
 import {Icon} from "@iconify/react"
 
-function PlayBtn() {
+function PlayBtn({src}) {
  const [act, setAct] = useState(true)
 
  function playBtn() {
   setAct(!act)
+  if (act) {
+   //action by the user is true play song
+   src.play()
+  } else {
+   //action by the user is false pause song
+   src.pause()
+  }
+
+  console.log(src.paused)
  }
 
  return (

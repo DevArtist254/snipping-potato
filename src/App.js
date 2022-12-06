@@ -6,15 +6,15 @@ import AudioInfo from "./comp/audioInfo"
 import Progress from "./comp/progress"
 
 function App() {
+ const audio = new Audio(song)
  return (
   <div>
    <div className="album">
-    <AudioContent />
+    <AudioContent song={audio} />
     <AudioInfo />
    </div>
-   <audio src={song} />
    <Progress />
-   <Controls />
+   <Controls song={audio} />
   </div>
  )
 }
